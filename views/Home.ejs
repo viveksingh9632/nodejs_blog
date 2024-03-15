@@ -1,0 +1,21 @@
+<%- include('layout/header') %>
+    <div class="container">
+
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <% if (message) { %>
+                        <div class="alert alert-dismissible fade show alert-<%= message.type %>" role="alert">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <strong><%= message.message %></strong>
+                        </div>
+                    <% } %>
+            
+                    <h1 class="card-text">Welcome to Home page</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('layout/footer') %>

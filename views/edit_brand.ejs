@@ -1,0 +1,58 @@
+<%- include('layout/header') %>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+            <div class="card shadow">
+                <div class="card-header bg-primary">
+                    <h3 class="text-light">Add brand</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form action="/save-brand" method="post" id="add-form" >
+                        <!-- Role Selection -->
+                        
+                        <div class="mb-3">
+                            <label for="model">Model</label>
+                            <input type="text" name="model" class="form-control form-control-lg"
+                                placeholder="Enter model" value="<%= brand.model %>"  required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description">Description</label>
+                            <input type="description" name="description" class="form-control form-control-lg"
+                                placeholder="Enter description" value="<%= brand.description %>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="display">display</label>
+                            <input type="display" name="display" class="form-control form-control-lg"
+                                placeholder="Enter display"value="<%= brand.display %>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ramrom">Ram-Rom</label>
+                            <input type="ramrom" name="ramrom" class="form-control form-control-lg"
+                                placeholder="Enter ramrom" value="<%= brand.ramrom %>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="camera">camera</label>
+                            <input type="camera" name="camera" class="form-control form-control-lg"
+                                placeholder="Enter camera" value="<%= brand.camera %>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="battery">battery</label>
+                            <input type="battery" name="battery" class="form-control form-control-lg"
+                                placeholder="Enter battery"  value="<%= brand.battery %>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="retail">Retail</label>
+                            <input type="retail" name="retail" class="form-control form-control-lg"
+                                placeholder="Enter retail"  value="<%= brand.retail %>" required>
+                        </div>
+
+                        <div class="mb-3 d-grid">
+                            <input type="submit" name="submit" value="Add brand" class="btn btn-primary btn-lg" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('layout/footer') %>

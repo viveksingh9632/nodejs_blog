@@ -1,0 +1,51 @@
+<%- include('layout/header') %>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+            <div class="card shadow">
+                <div class="card-header bg-primary">
+                    <h3 class="text-light">Add brand</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form action="/save-brand" method="post" id="add-form">
+                        <!-- Role Selection -->
+                        
+                        <div class="mb-3">
+                            <label for="model">Model</label>
+                            <input type="text" name="model" class="form-control" placeholder="Enter model" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description">Description</label>
+                            <input type="text" name="description" class="form-control" placeholder="Enter description" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="display">Display</label>
+                            <input type="text" name="display" class="form-control" placeholder="Enter display" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ramrom">Ram-Rom</label>
+                            <input type="text" name="ramrom" class="form-control" placeholder="Enter ramrom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="camera">Camera</label>
+                            <input type="text" name="camera" class="form-control" placeholder="Enter camera" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="battery">Battery</label>
+                            <input type="text" name="battery" class="form-control" placeholder="Enter battery" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="retail">Retail</label>
+                            <input type="text" name="retail" class="form-control" placeholder="Enter retail" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="submit" name="submit" value="Add brand" class="btn btn-primary btn-lg" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('layout/footer') %>
